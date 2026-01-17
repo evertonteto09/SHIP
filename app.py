@@ -65,13 +65,13 @@ def ship():
 
         # Barra de porcentagem
         draw = ImageDraw.Draw(base)
-        bar_x, bar_y = 250, 710
+        bar_x, bar_y = 250, 680
         bar_w, bar_h = 590, 120
         fill_w = int(bar_w * (percent / 100))
 
         draw.rounded_rectangle(
             [bar_x, bar_y, bar_x + fill_w, bar_y + bar_h],
-            radius=20,
+            radius=295,
             fill=(255, 105, 180)
         )
 
