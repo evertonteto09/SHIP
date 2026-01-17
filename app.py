@@ -44,8 +44,8 @@ def ship():
         avatar2_img = circle(avatar2_img)
 
         # Colar avatares (ajuste se quiser)
-        base.paste(avatar1_img, (80, 277), avatar1_img)
-        base.paste(avatar2_img, (880, 277), avatar2_img)
+        base.paste(avatar1_img, (81, 277), avatar1_img)
+        base.paste(avatar2_img, (879, 277), avatar2_img)
 
 # ❤️ Selecionar coração
         if percent <= 25:
