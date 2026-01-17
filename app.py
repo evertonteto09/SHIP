@@ -71,7 +71,7 @@ def ship():
 
         draw.rounded_rectangle(
             [bar_x, bar_y, bar_x + fill_w, bar_y + bar_h],
-            radius=295,
+            radius=160,
             fill=(255, 105, 180)
         )
 
