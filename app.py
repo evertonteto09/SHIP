@@ -80,7 +80,7 @@ def ship():
 
         # Texto
         try:
-            font = ImageFont.truetype("font.ttf", 32)
+            font = ImageFont.truetype("font.ttf", 50)
         except:
             font = ImageFont.load_default()
 
