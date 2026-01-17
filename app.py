@@ -27,7 +27,7 @@ def ship():
         def load_avatar(url):
             r = requests.get(url, timeout=5)
             img = Image.open(BytesIO(r.content)).convert("RGBA")
-            return img.resize((254, 254))
+            return img.resize((255, 255))
 
         avatar1_img = load_avatar(avatar1)
         avatar2_img = load_avatar(avatar2)
