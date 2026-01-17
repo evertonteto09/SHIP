@@ -65,7 +65,7 @@ def ship():
 
         # Barra de porcentagem
         draw = ImageDraw.Draw(base)
-        bar_x, bar_y = 250, 620
+        bar_x, bar_y = 250, 750
         bar_w, bar_h = 500, 40
         fill_w = int(bar_w * (percent / 100))
 
