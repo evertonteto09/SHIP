@@ -27,7 +27,7 @@ def ship():
         def load_avatar(url):
             r = requests.get(url, timeout=5)
             img = Image.open(BytesIO(r.content)).convert("RGBA")
-            return img.resize((252, 252))
+            return img.resize((256, 256))
 
         avatar1_img = load_avatar(avatar1)
         avatar2_img = load_avatar(avatar2)
@@ -45,7 +45,7 @@ def ship():
 
         # Colar avatares (ajuste se quiser)
         base.paste(avatar1_img, (80, 290), avatar1_img)
-        base.paste(avatar2_img, (860, 290), avatar2_img)
+        base.paste(avatar2_img, (865, 290), avatar2_img)
 
 # ❤️ Selecionar coração
         if percent <= 25:
