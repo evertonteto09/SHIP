@@ -44,8 +44,8 @@ def ship():
         avatar2_img = circle(avatar2_img)
 
         # Colar avatares (ajuste se quiser)
-        base.paste(avatar1_img, (210, 240), avatar1_img)
-        base.paste(avatar2_img, (690, 240), avatar2_img)
+        base.paste(avatar1_img, (100, 290), avatar1_img)
+        base.paste(avatar2_img, (890, 290), avatar2_img)
 
 # ❤️ Selecionar coração
         if percent <= 25:
@@ -58,10 +58,10 @@ def ship():
             heart_file = "heart4.png"
 
         heart = Image.open(heart_file).convert("RGBA")
-        heart = heart.resize((140, 140))
+        heart = heart.resize((332, 332))
 
         # 📍 Colar coração (centro)
-        base.paste(heart, (520, 300), heart)
+        base.paste(heart, (450, 240), heart)
 
         # Barra de porcentagem
         draw = ImageDraw.Draw(base)
