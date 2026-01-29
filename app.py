@@ -64,29 +64,19 @@ def ship():
         base.paste(heart, (450, 240), heart)
 
         # Barra de porcentagem
-       
         draw = ImageDraw.Draw(base)
-
         bar_x = 245 
         bar_y = 660
         bar_w = 715
         bar_h = 140
-
-        radius = bar_h // 2
-
-# largura real baseada na porcentagem
         fill_w = int(bar_w * (percent / 100))
+        radius = min(bar_h // 2, fill_w // 2 if fill_w > 0 else 1)
 
-# ✅ CORREÇÃO: largura mínima para manter o arredondado
-        if percent > 0 and fill_w < bar_h:
-         fill_w = bar_h
-
-         draw.rounded_rectangle(
-         [bar_x, bar_y, bar_x + fill_w, bar_y + bar_h],
-         radius=radius,
-         fill=(255, 105, 180)
-)
-
+        draw.rounded_rectangle(
+            [bar_x, bar_y, bar_x + fill_w, bar_y + bar_h],
+            radius=radius,
+            fill=(255, 105, 180)
+        )
 
         # Texto
         try:
